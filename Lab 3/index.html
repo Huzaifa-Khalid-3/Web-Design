@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS questions and Answers</title>
+  <link rel="StyleSheet" href="StyleSheet.css">
+</head>
+<body>
+	<div id = "header">
+		<h1> 24S_CST8238_350 Web Programming </h1>
+	</div>
+	<div id = "menu">	
+		<a href = "index.html"> Home </a>
+		<a href = "Multimedia.html"> Multimedia </a>
+	</div>
+	
+	<div id = "content">
+		<dl>
+			<dt><h3>What are the different parts of a CSS style rule?</h3></dt>
+			<dt><h3>Selectors</h3></dt> 
+			<dd><h4> Selectors describe which HTML element will be affected</h4></dd>
+			<dt><h3>Properties</h3></dt>
+			<dd><h4>properties describe how and what will be affected</h4></dd>	
+		
+			<dt><h3>Define Inline Styles, Embedded Style Sheet and External Style Sheet</h3></dt>
+			<dd><h4> Inline styles: style rules placed within a HTML element by using the "style" element </h4></dd>
+			<dd><h4> Embedded style: style rules placed within the style element inside the but specifcally located in the head element </h4></dd>
+			<dd><h4> Style rules placed within a external text file with the .css extension</h4></dd>
+		
+			<dt><h3>What is an element selector? Give an example</h3></dt>
+			<dd><h4> Element Selector: Selects all instances of a given HTML element ex: p { color: blue;} (all text of element p will now be blue) </h4></dd>
+			
+			<dt><h3>What is an class selector? Give an example</h3></dt>
+			<dd><h4> Class Selector: A class selector allows you to simultaneously target different HTML elements regardless of 
+			their position in the document tree ex: &lt p class = "first" &gt this text is called from .first class which has color set to brown &lt /p &gt </h4></dd>
+		
+			<dt><h3>What is a ID selector? Give an example</h3></dt>
+			<dd><h4> ID Selector: An id selector allows you to target a specific element 
+			by its id attribute regardless of its type or position ex: &lt p class = "first" &gt this text is called from #first ID which has color set to orange &lt /p &gt </h4></dd>
+		
+			<dt><h3>What are contextual selectors in CSS? Give an example. Give an example</h3></dt>
+			<dd><h4> A contextual selector (in CSS3 also called combinators) allows you to select elements based on their ancestors, descendants, or siblings.
+				That is, it selects elements based on their context or their relation to other elements in the document tree. 
+				ex: #main div p:first-child { ... } Selects the first &gtp&lt element somewhere within a &gtdiv&lt element that is somewhere within an element with an id="main" </h4></dd>
+			
+			<dt><h3>What is a attribute selector in CSS? Give an example. </h3></dt>
+			<dd><h4>An attribute selector provides a way to select HTML elements by either the presence of an element attribute 
+				or by the value of an attribute. ex: &gtimg src="images/square/6114907897.jpg" title="At top of Sulpher Mountain"&lt
+				will give the image properites based on what the [title] selector property values are</h4></dd>
+		
+			<dt><h3>What is a pseudo selector in CSS? Give an example. </h3></dt>
+			<dd><h4>A pseudo-element selector is a way to select something that does not exist 
+			explicitly as an element in the HTML document tree but which is still a recognizable selectable object </h4></dd>
+		
+			<dt><h3>What are the three cascade principles used by browsers when style rules conflict?</h3></dt>
+			<dt><h4>Inheritance</h4></dt>
+			<dd><h4>Many (but not all) CSS properties affect not only themselves but their descendants as well. 
+			Font, color, list, and text properties are inheritable. Layout, sizing, border, background and spacing properties are not</h4></dd>
+			<dt><h3>Specificity</h3></dt>
+			<dd><h4>Specificity is how the browser determines which style rule takes precedence when more than one style rule could be applied to the same element</h4></dd>
+			<dt><h3>Location</h3></dt>
+			<dd><h4>When inheritance and specificity cannot determine style precedence, the principle of location will be used. 
+			The principle of location is that when rules have the same specificity, then the latest are given more weight.</h4></dd>
+			<dt><h3>What are CSS variables?</h3></dt>
+			<dl><h4> CSS variables, also known as custom properties, are entities defined by CSS authors that contain specific values to be reused throughout a document. They are a way to store values that can be reused multiple times within a stylesheet. 
+			This feature allows for more efficient and manageable CSS code, especially for large projects.</h4></dl>
+		</dl>
+		</div>
+	<div id = "footer">
+		<h3> Student number: 041115857</h3>
+		<h3> First name: Huzaifa </h3>
+		<h3> Last name: Khalid </h3>
+		<h3> Email address: Huzaifa.khalid@algonquinlive.com</h3>
+	</div>
+</body>
+</html>

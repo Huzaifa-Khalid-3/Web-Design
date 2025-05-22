@@ -1,0 +1,21 @@
+/* StyleSheet.css */
+
+body {
+  background-color: #f8f9fa;
+}
+
+#header {
+  background-color: #007bff;
+  color: white;
+  padding: 1em;
+}
+
+#menu .navbar {
+  margin-bottom: 1em;
+}
+
+#footer {
+  background-color: #007bff;
+  color: white;
+  padding: 1em;
+}

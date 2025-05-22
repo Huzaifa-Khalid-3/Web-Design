@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<h1> ELEMENTS OF HTML5</h1>
+	<meta charset="utf-8">
+</head>
+<body>
+	<p> The three main aims of devloping HTML are: Structure Semantics and Interactivity </p>
+	<p> An example of Inline HTML text element is the &lt;a herf&gt; tag. This tag works as an 
+	inline element becuase it doesn't interfere with text flow it would allow for a link without affected the overall structure of the webpage</p>
+	<p>	Semantic HTML markup is the process of using tags that describe the purporse or role of the content rather than just its appearence or layout. Its improtant becuase it helps make a persons website and its backend code much easier to understand and work with</p> 
+	<p> &lt;p&gt; this is a sentence &lt;/p&gt; </p>
+
+	<h3>&lt;div&gt; is used to divide sections of the html page so its easier to read and use (example below) </h3>
+
+	<div>
+		<h2> Main container</h2>
+		<p> Main infromation</p>
+	</div>
+
+	<h3> &lt;aside&gt; is used to seperate information that while being related to the main topic isn't as important like a sideshow (example below) </h3>
+
+	<aside> 
+		<h5> Extra info <h5>
+		<p> this section contains extra info </p>
+	</aside>
+
+	<h3> picture tag example below</h3>
+
+	<picture>
+		<source srcset="https://t4.ftcdn.net/jpg/05/62/99/31/360_F_562993122_e7pGkeY8yMfXJcRmclsoIjtOoVDDgIlh.jpg media" = "(min-width: 800px)">
+		<img src = "https://images.unsplash.com/photo-1611267254323-4db7b39c732c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y3V0ZSUyMGNhdHxlbnwwfHwwfHx8MA%3D%3D" alt = "Placeholder image of cat;" style="width: 100px; height:auto;">
+	</picture>
+	
+	<h3> figure tag example below </h3>
+
+	<figure> 
+		<img src="https://m.media-amazon.com/images/I/81I2L-xCV7L._AC_UF1000,1000_QL80_.jpg" style= "width: 200px; height:300px;" alt="Midknight at the barklay hotel cover">
+		<figcaption> The cover page for midknight at the barklay hotel</figcaption>
+	</figure>
+	
+	<h3> sub and sup examples below</h3>
+	<p> A example of the sub tag can be used to show the chemical formula for water which is H<sub>2</sub>O</p>
+	<p> A example of the sup tag can be used to show the boiling pointer for water which is 100<sup>o</sup>C.</p> 
+
+	<h3> main, section and article tag example below</h3>
+
+	<main>
+		<section>
+			<h4> this is where we all of the main information will go</h4>
+		</section>
+		<section>
+			<h4> my assignments</h4>
+				<article> 
+					<h5> Assignment 1</h5>
+					<p> write code for guessing game</p>
+				</article>
+				<article>
+					<h5> Assignment 2 </h5>
+					<p> write code for a simple website</p>
+				</article>
+		</section>
+		<img src = "to be added;" alt="A placeholder for now">
+	</main>
+	
+	<h3>Unordered list below</h3>
+	<ul>
+		<h4> food list </h4>
+		<li> burger </li>
+		<li> poutine </li>
+		<li> cake </li>
+	</ul>
+	
+	<h3>Ordered list below</h3>
+	<ol> 
+		<h4> Turning light bulb onabort </h4>
+		<li> enter room</li>
+		<li> Find switch </li>
+		<li> flip the switch</li>
+	</ol>
+	
+	<h3>Description list below</h3>
+	<dl>
+		<h4> Three main languages for website devlopment: HTML,CSS and JS</h4>
+		<dt>HTML</dt>
+		<dd>Hypertext markup language</dd>
+		<dt>CSS</dt>
+		<dd>Casscading stye sheets</dd>
+		<dt>JS</dt>
+		<dd>javascript</dd>
+	</dl>		
+	
+	<h3> Absolute, relative and email hyperlinks</h3>
+		<p> Absolute links point to a specific address ex: <a href="https://www.google.com/"> goes to google</a></p>
+		<p> Relative links point to a specific place within a webpage/website for example <a href="Placeholder"> about us (just a Placeholder)</a></p>
+		<p> Email links let users send emails to a specific address when clicked for example: <a href="mailto:placeholder@gmail.com"> somerandomperson@gmail.com </a></p>
+	
+	<h3> Meter and progress tags are both used to show how much of something is done (normaly in percent) but meter has a predefined min and max range where as progress only has a defined max</h4>
+	<h4> Meter tag example <h4>
+	<p> <meter value="60" min="0" max="100"> 70% </meter> 70% of earth is water</p>
+	<h4> progress tag example <h4>
+	<p> <progress value="30" max="100"> 30% </progress> 30% of file upload is complete</p>
+	
+	<h4> datalist: Like an toy box, lets user pick what they want but from a predetermined pool of options</h4>
+	
+	<input list="websites" name="website">
+	<datalist id="websites">
+		<option value="Yahoo">
+		<option value="Friv">
+		<option value= "brightspace">
+		<option value= "hapara">
+	</datalist>
+	
+	</body
+</html>

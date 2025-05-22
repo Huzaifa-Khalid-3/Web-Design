@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="StyleSheet.css">
+</head>
+<body>
+
+  <div class="container">
+    <div id="header" class="text-center mt-4">
+      <h1>Temperature Converter</h1>
+    </div>
+	
+    <div id="content">
+      <form>
+        <div class="form-group">
+          <label for="tempValue">Enter temperature:</label>
+          <input type="number" id="tempValue" class="form-control">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="convertTemperature()">Convert!</button>
+      </form>
+      <p id="result"></p>
+    </div>
+
+    <div id="footer" class="text-center mt-4">
+      <h3>Student number: 041115857</h3>
+      <h3>First name: Huzaifa</h3>
+      <h3>Last name: Khalid</h3>
+      <h3>Email address: khal0219@algonquinlive.com</h3>
+    </div>
+  </div>
+
+  <script>
+    function convertTemperature() {
+      let unit = prompt("Enter the unit to convert to (Celsius/Fahrenheit):");
+      let temp = prompt("Enter the temperature value:");
+      let convertedTemp, originalUnit;
+
+      if (isNaN(temp)) {
+        alert("Please enter a valid number for temperature.");
+        return;
+      }
+
+      temp = parseFloat(temp);
+      if (unit.toLowerCase() === "celsius" || unit.toLowerCase() === "c") {
+        convertedTemp = (temp - 32) * (5 / 9);
+        originalUnit = "Fahrenheit";
+        unit = "Celsius";
+      } else if (unit.toLowerCase() === "fahrenheit" || unit.toLowerCase() === "f") {
+        convertedTemp = (temp * (9 / 5)) + 32;
+        originalUnit = "Celsius";
+        unit = "Fahrenheit";
+      } else {
+        alert("Invalid unit entered. Please enter either 'Celsius' or 'Fahrenheit'.");
+        return;
+      }
+
+      alert(`Original Temperature: ${temp} ${originalUnit}\nConverted Temperature: ${convertedTemp.toFixed(2)} ${unit}`);
+      document.getElementById('result').textContent = `Converted Temperature: ${convertedTemp.toFixed(2)} ${unit}`;
+
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCKTYPE html>
+<body>
+	<h1> Basic Concept of Web Technology</h1>
+		<h3> Define a web server </h3>
+			<p> A web server is nothing more than a computer that responds to HTTP requests </p>
+
+		<h3>Describe the main steps in the domain name registration process </h3>
+
+			<li> 1: Decide on a top level domain and a second level domain</li>
+			<li> 2: chose a domain registar or reseller (a company like a web host that works with a registar)</li> 
+			<li> 3: registar will check if domain is avaliable by asking the TLD </li>
+			<li> 4: complete the reigstration procedures which includes whois contact information (includes DNS information) and payment</li>
+			<li> 5: registry will push DNS information for domain to TLD server name 
+			<li> 6: Domain is purchased and is now avaliable for use </li>
+	 
+		<h3> Give an example of Uniform Resource Locator (URL) and specify all components of an URL </h3>
+			<h5> http://www.funwebdev.com/index.php?page=17#article </h5>
+				<li> http = protocol</li>
+				<li> www.funwebdev.com = domain</li>
+				<li> index.php = path</li>
+				<li> page=17 is the query string</li>
+				<li> article = fragment</li>
+
+		<h3> What are the benefits of DNS? </h3>
+			<p></p>
+
+		<h3> Describe the main steps in the domain name address resolution process</h3>
+			<p>	1: visit a link (www.funwebdev.com)<br> 2: if IP for the link is not in browsers cache it delegates tasks to operating system DNS resolver<br>
+				3: if not in its DNS cache resolver makes request for IP address ISP's DNS server<br>
+				4: check its DNS cache<br>
+				5: if the primary DNS server doesn't have the requested domain in its DNS cache. it sends out a request to the root name server<br>
+				6: root name server returns IP of name server for requested TLD<br>
+				7: request ip name server for funwebdev.com<br>
+				8: .com name server will return IP address of DNS server for funwebdev.com<br>
+				9: request for IP address for www.fumwebdev.com<br>
+				10: return ip address of web server<br>
+				11: return ip address of www.funwebdev.com<br>
+				12: return ip address of www.funwebdev.com<br>
+				13: browser requests page<br>
+				14: returns requested page</p>
+
+		<h3> Write down all the Hypertext Transfer Protocol (HTTP) response codes with the corresponding texts</h3>
+			<p> 200: Ok <br></br> means response was successful</p>
+			<p> 301: Moved permanenty <br></br> Tells the client that the requested resource has permanently moved. Codes like this allow search engines 
+			to update their databases to reflect the new location of the resource. Normally the new location for that resource is returned in the response.</p>
+			<p> 304: Not Modified <br></br> If the client so requested a resource with appropriate Cache-Control headers, the response might say that the resource on the server is no newer than the one in the client cache. 
+			A response like this is just a header, since we expect the client to use a cached copy of the resource.</p>
+			<p> 307: Temporary redirect<br></br> This code is similar to 301, except the redirection should be considered temporary.</p>
+			<p> 400: Bad Request<br></br> If something about the headers or HTTP request in general is not correctly adhering to HTTP protocol, the 400 response code will inform the client.</p>
+			<p> 401: Unauthorized<br></br>Some web resources are protected and require This error provides almost no information to the client except to say the
+			server has encountered an erro .the user to provide credentials to access the resource. 
+			If the client gets a 401 code, the request will have to be resent, and the user will need to provide those credentials.</p>
+			<p> 404: Not found <br></br> 404 codes are one of the only ones known to web users. Many browsers will display an HTML page with the 404 code to them when the requested resource was not found.</p>
+			<p> 414: Request URI too long <br></br> URLs have a length limitation, which varies depending on the server software in place. 
+			A 414 response code likely means too much data is likely trying to be submitted via the URL.</p>
+			<p> 500: Internal server error <br></br> This error provides almost no information to the client except to say the server has encountered an error.</p>
+	
+		<h3> What events occur during the rendering of a web page?</h3>
+			<p></p>
+
+		<h3> Give some examples of HTTP request methods.</h3>
+			<p> GET, POST and HEAD requests</p>
+
+		<h3> What is browser caching?</h3>
+			<p> browser caching is when your browser stores copies of things like websites that you've already visited so when you need to visit the sit again it can find it in its cache to save time</p>
+
+		<h3> Give an example of web server software, database software and scripting software.</h3>
+			<li> Web server software: HTTP server</li>
+			<li> Database software: MySQL</li>
+			<li> Scripting software: Python</li>
+	</body>
+</html>
